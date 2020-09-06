@@ -105,6 +105,15 @@
         System.out.println();
     }
 }
+/*
+ * 13579
+ * 1357
+ * 135
+ * 13
+ * 1
+
+ * 
+ */
  public static void ex24e(int n) {
         for(int i=0;i<n;i++) {
             for (int j=0;j<n;j++) {
@@ -116,3 +125,26 @@
         System.out.println();
     }
 }
+/*
+ * 2----
+ * -4---
+ * --6--
+ * ---8-
+ * ----10
+
+ */
+    public static void exl25(int n) {
+        for(int i=0;i<n;i++) {
+            for (int j=0;j<n;j++) {
+                if(i==j) {
+                    System.out.print((i+1)*2);
+                }
+                else{
+                    System.out.print("-");
+                }
+                
+                
+            }
+            System.out.println();
+        }
+    }
