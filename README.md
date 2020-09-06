@@ -1,4 +1,4 @@
 # APCS
 language use JAVA.
 
-For personal use mostly. You can also refer to this repository. BUGS MAY EXIST.
+For personal use mostly. Referencing OK. BUGS MAY EXIST.
