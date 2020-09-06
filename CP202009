@@ -1,1 +1,24 @@
-
+/*2++++
+ **4+++
+ ***6++
+ ****8+
+ *****10
+ */
+    public static void exl(int n) {
+        for(int i=0;i<n;i++) {
+            for (int j=0;j<n;j++) {
+                if(i==j) {
+                    System.out.print((i+1)*2);
+                }
+                else if(j<i) {
+                    System.out.print("*");
+                }
+                else{
+                    System.out.print("+");
+                }
+                
+                
+            }
+            System.out.println();
+        }
+    }
