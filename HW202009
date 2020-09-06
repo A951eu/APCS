@@ -1,1 +1,11 @@
 
+	//factorial
+	
+	public static int fac(int n) {
+		int facin=1;
+		for (int i=1;i<=n;i++) {
+			facin=facin*i;
+		}
+		return facin;
+	}
+	
