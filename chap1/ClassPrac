@@ -93,7 +93,7 @@ public boolean hasBad(String str) {
   }
 }
 
-
+//那什么题【return 是指结束程序，应该声明两个指针，front，back，return front+back。if里面给front 和back 赋值】
 
 
 
