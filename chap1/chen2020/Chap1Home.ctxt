@@ -1,0 +1,27 @@
+#BlueJ class context
+comment0.params=n
+comment0.target=int\ fac(int)
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=n
+comment2.target=void\ exl(int)
+comment2.text=2++++\r\n4+++\r\n6++\r\n8+\r\n10\r\n
+comment3.params=n
+comment3.target=void\ ex24c(int)
+comment3.text=\r\n\ 97531\r\n\ 7531-1\r\n\ 531-1-3\r\n\ 31-1-3-5\r\n\ 1-1-3-5-7\r\n
+comment4.params=n
+comment4.target=void\ ex24a(int)
+comment4.text=\r\n\ 97531\r\n\ 7531\r\n\ 531\r\n\ 31\r\n\ 1\r\n\r\n
+comment5.params=n
+comment5.target=void\ ex24b(int)
+comment5.text=\r\n\ \r\n\ 97531\r\n\ 7531\r\n\ 531\r\n\ 31\r\n\ 1\r\n\r\n
+comment6.params=n
+comment6.target=void\ ex24d(int)
+comment6.text=\ \r\n\ 1\r\n\ 13\r\n\ 135\r\n\ 1357\r\n\ 13579\r\n
+comment7.params=n
+comment7.target=void\ ex24e(int)
+comment7.text=\r\n\ 13579\r\n\ 1357\r\n\ 135\r\n\ 13\r\n\ 1\r\n\r\n\ \r\n
+comment8.params=n
+comment8.target=void\ exl25(int)
+comment8.text=\r\n\ 2----\r\n\ -4---\r\n\ --6--\r\n\ ---8-\r\n\ ----10\r\n\r\n
+numComments=9
