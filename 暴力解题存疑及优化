@@ -30,5 +30,32 @@ public String seeColor(String str) {
   }
 }
 
+/*
+*Given a string, return a version without the first 2 chars. Except keep the first char if it is 'a' and keep the second char if it is 'b'. The string may be any length. Harder than it looks.
+*
+*
+*deFront("Hello") → "llo"
+*deFront("java") → "va"
+*deFront("away") → "aay"
+*/
+public String deFront(String str) {    
+String a="",b="",c="";
+  if (str.length()==0||str.length()==1&&!str.substring(0,1).equals("a")){
+  }
+  else{
+    if (str.length()>=2){
+      c=str.substring(2);
+    }
+    if (str.length()>=1&&str.substring(0,1).equals("a")){
+      a="a";
+    }
+    if (str.length()>=2&&str.substring(1,2).equals("b")){
+      b="b";
+    }
+
+  }
+  return a+b+c;
+}
+
 
 //【SOLVED】
