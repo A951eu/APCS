@@ -2,64 +2,6 @@
 
 
 
-//【UNSOLVED】
-
-/*Given a string, if the string begins with "red" or "blue" return that color string, otherwise return the empty string.
-*
-*
-*seeColor("redxx") → "red"
-*seeColor("xxred") → ""
-*seeColor("blueTimes") → "blue"*/
-
-public String seeColor(String str) {
-
-  if (str.length()<3){
-    return "";
-  }
-  else if (str.substring(0,3).equals("red")){
-    return "red";
-  }
-  else if (str.length()<4){
-    return "";
-  }
-  else if (str.substring(0,4).equals("blue")){
-    return "blue";
-  }
-  else{
-    return "";
-  }
-}
-//vbhvbn
-/*
-*Given a string, return a version without the first 2 chars. Except keep the first char if it is 'a' and keep the second char if it is 'b'. The string may be any length. Harder than it looks.
-*
-*
-*deFront("Hello") → "llo"
-*deFront("java") → "va"
-*deFront("away") → "aay"
-*/
-public String deFront(String str) {    
-String a="",b="",c="";
-  if (str.length()==0||str.length()==1&&!str.substring(0,1).equals("a")){
-  }
-  else{
-    if (str.length()>=2){
-      c=str.substring(2);
-    }
-    if (str.length()>=1&&str.substring(0,1).equals("a")){
-      a="a";
-    }
-    if (str.length()>=2&&str.substring(1,2).equals("b")){
-      b="b";
-    }
-
-  }
-  return a+b+c;
-}
-
-
-//【SOLVED】
-
 
 
 /*【【】】
@@ -76,4 +18,3 @@ public String withoutX(String str) {
 }
 
 
-//【】codingbat string1 最后一题
