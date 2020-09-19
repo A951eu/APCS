@@ -1,0 +1,123 @@
+//仅仅是方便浏览。提醒自己真正复习还是在codingbat上直接看。
+
+
+//【Array-2 > sum67】
+
+public int sum67(int[] nums) {
+/*  int sum=0;
+  for (int i=0;i<nums.length;i++){
+    if (nums[i]==6){
+      int j=i;
+      while(nums[j]!=7){
+        j++;
+      }
+      i=j;
+      
+    }
+    else {
+      sum+=nums[i];
+    }
+  }
+  return sum;
+  */
+  
+  /*interval
+  法1.灯 当遇到6的时候灯亮，遇到7灯暗。true false实现
+  无法算出segment的长度（问六七段最长的是哪个？）
+  点灯的好处在于可以处理多个segment。
+  法2.指针（好处是不用count）
+  if（）
+  */
+ //灯法 
+  boolean flag=false;
+  int sum=0;
+  for (int i=0;i<nums.length;i++){
+    if(nums[i]==6){
+      flag=true;
+    }
+    if(flag==false){
+      sum=sum+nums[i];
+    }
+    if(nums[i]==7){
+      flag=false;
+    }
+   
+  }
+   return sum;
+   //ijk专用于指针
+
+/*指针法
+  int k=-1;
+  int sum=0;
+  for (int i=0;i<nums.length;i++){
+    if (nums[i]==6){
+      //flag=true;
+      k=i;
+    }
+    
+    if (k==-1){
+      sum=sum+nums[i];
+    }
+    if(nums[i]==7){
+      count=i-k-1;//如果要segment的长度的话
+      if (count>max){//注意大于和大于等于的区别
+        max=count;//如果要马上找到最大值如果要马上找到最大值
+        maxi=k;//如果要找最大位起始号的话
+      }
+      k=-1；
+    }
+    return sum;
+}
+*/
+
+}
+
+
+
+
+//【Array-2 > fizzArray2】
+
+public String[] fizzArray2(int n) {
+  String[] s=new String [n];
+  for (int i=0;i<n;i++){
+    s[i]=i+"";//int转string
+  }
+  return s;
+}
+
+
+//【Array-2 > no14】
+
+public boolean no14(int[] nums) {
+  //点灯，要看的特殊数字有几个就要几个灯
+  boolean flag1=false;
+  boolean flag4=false;
+  for(int i=0;i<nums.length;i++){
+    if(nums[i]==1){
+      flag1=true;
+    }
+    if(nums[i]==4){
+      flag4=true;
+    }
+  }
+  return !(flag1&&flag4);
+}
+
+//【Array-2 > either24】
+
+public boolean either24(int[] nums) {
+  boolean flag2=false;
+  boolean flag4=false;
+  for(int i=0;i<nums.length-1;i++){
+    if (nums[i]==2&&nums[i+1]==2){
+      flag2=true;
+    }
+    if (nums[i]==4&&nums[i+1]==4){
+      flag4=true;
+    }
+  }
+  return !(flag2==flag4);//哦！可以列个表看看条件
+}
+
+
+
