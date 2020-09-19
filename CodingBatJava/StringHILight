@@ -1,0 +1,101 @@
+//【String-2 > endOther】
+
+public boolean endOther(String a, String b) {
+ String max="",min="";
+ if (a.length()>=b.length()){
+   max=a.toLowerCase();
+   min=b.toLowerCase();
+ }
+ else{
+   min=a.toLowerCase();
+   max=b.toLowerCase();
+ }//用两根指针确定大小
+ int d=max.length()-min.length();
+/* for(int i=0;i<min.length();i++){//多物体控制循环小的~
+   if(!min.substring(i,i+1).equals(max.substring(d+i,d+i+1))){//一根针 用在固定步长
+   return false;}//找反例结构
+ }
+  return true;
+  */
+   for(int i=0,j=d;i<min.length()&&j<max.length();i++,j++){//双指针 &&超限保护比较有保障 泛用性++
+   if(!min.substring(i,i+1).equals(max.substring(j,j+1))){
+   return false;}//找反例结构
+ }
+ return true;
+ 
+ /*没有for循环遇到arraylist之类的适用性不好
+ a=a.toLowerCase();
+ b=b.toLowerCase();//段落保护
+ return (a.length()>=b.length()&&a.indexOf(b,a.length()-b.length())!=-1||
+ b.length()>a.length()&&b.indexOf(a,b.length()-a.length())!=-1;
+ */
+ 
+}
+
+
+//【String-2 > xyzThere】
+
+public boolean xyzThere(String str) {
+/*
+  if (str.length()<3){
+    return false;
+  }
+  else if(str.length()==3){
+    return true;
+  }
+  else{
+   for(int i=0;i<str.length()-2;i++){
+     if(str.substring(i,i+3).equals("xyz")&&(str.indexOf(".",i-1)!=i-1)){
+       return true;
+      }
+     
+   }
+    return false;
+   }
+   */
+   //str=" "+str;//如果是切四位 前后保护 return 位号之类的不是true or false的题可能就有问题
+   for (int i=0;i<str.length()-2;i++){//全扫描
+    if (str.substring(i,i+3).equals("xyz")){
+      if(i==0||!str.substring(i-1,i).equals("."))//protect
+        return true;
+    }
+   }
+    return false;
+  
+}
+
+
+//【String-2 > xyBalance】
+
+for (int i=0;i<str.length();i++){
+    if(str.substring(i,i+1).equals("x")&&str.indexOf("y",i)==-1){
+      return false;
+    }
+    
+  }
+  return true;
+  
+  
+  
+//【String-2 > repeatEnd】
+
+public String repeatEnd(String str, int n) {
+String a="";
+for(int i=0;i<n;i++){//复制遍数
+  a=a+str.substring(str.length()-n);
+}
+return a;
+}
+
+//【String-2 > repeatSeparator】
+
+public String repeatSeparator(String word, String sep, int count) {
+  String a="";
+  for (int i=0;i<count;i++);{//就大
+    a=a+word;
+    if(i<count-1){//排除小
+      a=a+sep;
+    }
+  }
+  return a;
+}
