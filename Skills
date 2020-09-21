@@ -59,3 +59,47 @@ public boolean endOther(String a, String b) {
  b.length()>a.length()&&b.indexOf(a,b.length()-a.length())!=-1;
  */
 }
+
+
+//【tlsmith2@wsfcs.k12.nc.us > classRanks 】
+
+public List<Integer> classRanks(List<Integer> rankings) {    
+  int count=0;
+  for (int i=0;i<rankings.size();i++)
+  {
+    if (rankings.get(i)<=10){
+    count++;}
+    if (count==2){
+      break;
+    }
+    
+  }
+  List<Integer> res=new ArrayList<Integer>();
+  while(rankings.size()>0){//shorten the length
+    int maxi=0;
+    for (int i=0;i<rankings.size();i++){
+      if (rankings.get(i)>rankings.get(maxi))
+      maxi=i;//find the max
+    }
+    if (count==2)
+      res.add(0,rankings.remove(maxi));//reverse the order
+    else
+      res.add(rankings.remove(maxi));
+  }
+  return res;
+}
+
+
+
+
+//【tlsmith2@wsfcs.k12.nc.us > guessAverage】
+
+public boolean guessAverage(List<Integer> numsList, int guess) {     
+  int sum=0;
+  double ave=0;
+  for (int i=0;i<numsList.size();i++){
+    sum=sum+numsList.get(i);
+  }
+  ave=sum/numsList.size();
+  return (double)guess>=ave*0.95&&(double)guess<=ave*1.05;//强制转换double
+}
