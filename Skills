@@ -113,3 +113,44 @@ public boolean guessAverage(List<Integer> numsList, int guess) {
     s[i]=i+"";//int转string
   }
   return s;
+
+
+****
+//欣赏【tlsmith2@wsfcs.k12.nc.us > golfingBrothers】
+public String golfingBrothers(List<Integer> adamList, List<Integer> bobList, List<Integer> craigList) {
+    double sum = 0, count = 0;
+    double adamAvg = 999, bobAvg = 999, craigAvg = 999;
+    if (adamList.size()>1)
+    {
+        for (int i=0; i<adamList.size(); i++)
+        {
+            sum+=adamList.get(i);
+        }
+        adamAvg = sum/adamList.size();
+    } 
+    sum = 0;   
+     
+    if (bobList.size()>1)
+    {
+        for (int i=0; i<bobList.size(); i++)
+        {
+            sum+=bobList.get(i);
+        }
+        bobAvg = sum/bobList.size();
+    } 
+    sum = 0;   
+
+    if (craigList.size()>1)
+    {
+        for (int i=0; i<craigList.size(); i++)
+        {
+            sum+=craigList.get(i);
+        }
+        craigAvg = sum/craigList.size();
+    } 
+    if (adamAvg < bobAvg && adamAvg < craigAvg)
+        return "adam";
+    if (bobAvg < adamAvg && bobAvg < craigAvg)
+        return "bob";
+    return "craig";
+}
