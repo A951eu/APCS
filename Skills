@@ -103,3 +103,13 @@ public boolean guessAverage(List<Integer> numsList, int guess) {
   ave=sum/numsList.size();
   return (double)guess>=ave*0.95&&(double)guess<=ave*1.05;//强制转换double
 }
+
+
+
+
+**
+  String[] s=new String [n];
+  for (int i=0;i<n;i++){
+    s[i]=i+"";//int转string
+  }
+  return s;
