@@ -1,8 +1,29 @@
-//2020.09
+//---------------------2020.09---------------------------------------------------------------//
 
+**
+public List<String> wackyWords(List<String> wordsList) {//反面例    
+ if (wordsList.size()>0){
+  String first=wordsList.get(0),fof=first.substring(0,1),last=wordsList.get(wordsList.size()-1),lol=last.substring(last.length()-1);
+  for (int i=0;i<wordsList.size();i++){
+    String temp=fof+wordsList.get(i)+lol;
+    wordsList.set(i,temp);
+  }
+  
+  }
+  return wordsList;
+  //一大长串套中套的玩意用中间变量分开来写 分步给分的可以
+ /* for (int i=0;i<wordsList.size();i++){//好的例
+    String before=...
+    String last=...
+    String after=...
+    wordsList.set(i,before+wordsList.get(i)+after);
+ }
+ return wordsList;//
+    */
+}
 
-
-
+**
+//函数可以直接连函数！！！比如wordsList.get(0).substring(0,1)
 
 
 **
