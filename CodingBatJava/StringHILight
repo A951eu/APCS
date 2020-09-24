@@ -90,12 +90,20 @@ return a;
 //【String-2 > repeatSeparator】
 
 public String repeatSeparator(String word, String sep, int count) {
-  String a="";
+/*  String a="";
   for (int i=0;i<count;i++);{//就大
     a=a+word;
     if(i<count-1){//排除小
       a=a+sep;
     }
   }
-  return a;
+  return a;//为啥codingbat不认？*/
+        String s = "";
+    for (int x = 0; x < count; x++) {
+      s += word;
+      if (x < count - 1) {
+        s += sep;
+      }
+    }
+    return s;
 }
