@@ -1,0 +1,63 @@
+//MAGICBOX
+public class MagicBox
+{
+      public static void print(int[][] arr){
+          for (int r=0;r<arr.length;r++){
+              for (int c=0;c<arr[0].length;c++){
+                  System.out.print(arr[r][c]);
+        }
+         System.out.println();
+        }
+    }
+    public static void magicBox(int n){
+         int[][] arr=new int[n][n];
+         int r=0;
+         int c=n/2;//r c 定位插针
+         for (int i=0;i<n*n;i++){
+             arr[r][c]=i+1;//填充数字
+             //移动rc指针，prepare for the next assignment
+             if (arr[r][c]%n!=0){//有规则 用if
+                 c++;
+                 r--;
+         
+            }   
+            else{
+                r++;
+            }
+            //指针重定位，防超限(超限保护）这里有c++ r-- 都可能超限 
+            //超限状态：c=length。强行拉回这行的第0列。 r==-1.强行拉回
+            if (c == arr[0].length){
+                c=0;//c++             //c=(c+1)%arr[0].length;
+            }
+            if (r==-1){
+                r=arr.length-1;//r--       //r=(r+1)%arr.length;防超限死循环，取余回归。只能用于正超限。负超限只能用原方法
+            }
+            if (r == arr.length){          //注释内的方法的话可省略这个
+                r=0;//r++
+                }
+                print(arr);
+   }
+}
+   public static void makeLine(int row,int col){
+         int[][] arr=new int[row][col];
+         int n=1;
+         for (int r=0;r<arr.length;r++){
+             for(int c=0;c<arr[0].length;c++){
+                 arr[r][c]=n;
+                 n++;
+                }
+            }
+         print(arr);
+    }
+      public static void makeCol(int row,int col){
+         int[][] arr=new int[row][col];
+         int n=1;
+         for (int c=0;c<arr[0].length;c++){
+             for(int r=0;r<arr.length;r++){
+                 arr[r][c]=n;
+                 n++;
+                }
+            }
+         print(arr);
+    }
+}
