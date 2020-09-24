@@ -137,7 +137,7 @@ public String golfingBrothers(List<Integer> adamList, List<Integer> bobList, Lis
             sum+=bobList.get(i);
         }
         bobAvg = sum/bobList.size();
-    } 
+    }
     sum = 0;   
 
     if (craigList.size()>1)
@@ -153,4 +153,22 @@ public String golfingBrothers(List<Integer> adamList, List<Integer> bobList, Lis
     if (bobAvg < adamAvg && bobAvg < craigAvg)
         return "bob";
     return "craig";
+}
+
+
+****
+//套娃欣赏【tlsmith2@wsfcs.k12.nc.us > scaredyCat】
+public List<String> scaredyCat(List<String> petsList) {    
+  for (int i=0; i<petsList.size()-1; i++)
+  {
+     if (petsList.get(i).equals("dog"))
+     {
+         if (petsList.get(i+1).equals("cat"))
+         {
+             petsList.remove(i+1);
+             i--;
+         }    
+     }
+  } 
+  return petsList;
 }
