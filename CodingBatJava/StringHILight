@@ -168,3 +168,22 @@ public String starOut(String str) {
   return str.trim();//删除头尾空格 
   //for一个一个来会比较无力
 }
+
+
+//【String-2 > getSandwich】
+public String getSandwich(String str) {
+  int i=str.indexOf("bread");
+  int first=i;
+  int last=i;// if there's none, last=-1
+  while (i!=-1){
+    last=i;
+    i=str.indexOf("bread",i+5);
+  }
+  if(last!=first){
+    return str.substring(first+5,last);
+    
+  }
+  else{
+    return "";
+  }// if bread bread bread bread all needed: use i&j
+}
