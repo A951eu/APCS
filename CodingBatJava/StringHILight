@@ -130,3 +130,41 @@ public String wordEnds(String str, String word) {
   }
   return res;//return result.trim();切割
 }
+
+
+
+
+
+//【String-2 > plusOut 】
+public String plusOut(String str, String word) {
+  String plus="";//跳指针，指针指的地方就给替了
+  for (int i=0;i<str.length();i++){
+    plus+="+";
+  }
+  int i=str.indexOf(word);
+  while (i!=-1){
+    plus=plus.substring(0,i)+word+plus.substring(i+word.length());       //update string，只能替换掉插在上面的东西 
+    i=str.indexOf(word,i+word.length());
+  }
+  return plus;
+}
+
+
+//【String-2 > starOut】
+public String starOut(String str) {
+  //找到之后可能之后还是星星就，不能直接找到星星删前后
+  //如果后面是星星就删掉星星，如果是字符就删三个字符
+  str=" "+str+" ";
+  int i=str.indexOf("*");
+  while (i!=-1){
+    if(str.substring(i+1,i+2).equals("*")){
+      str=str.substring(0,i+1)+str.substring(i+2);
+    }
+    else{
+      str=str.substring(0,i-1)+str.substring(i+2);
+    }
+    i=str.indexOf("*");
+  }
+  return str.trim();//删除头尾空格 
+  //for一个一个来会比较无力
+}
