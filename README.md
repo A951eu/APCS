@@ -3,7 +3,7 @@
 
 →杂物，可能有bug，劳驾指正~
 
-→中文|chinese
+→中文 + ENG|chinese + Eng
 
 →language use JAVA.
 
