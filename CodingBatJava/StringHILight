@@ -107,3 +107,26 @@ public String repeatSeparator(String word, String sep, int count) {
     }
     return s;
 }
+
+
+
+//【String-2 > wordEnds】
+public String wordEnds(String str, String word) {
+  //str=""+str+"";讨巧方法，如果要位数记得加减一
+  String res = "";
+  int i = str.indexOf(word);
+  while (i!=-1){
+    String before = "";//从这里 
+    String after = "";
+    if (i!=0){
+      before = str.substring(i-1,i);
+    }
+    if (i!=str.length()-word.length()){
+      after = str.substring(i+word.length(),i+word.length()+1);
+    }
+    res=res+before+after;//to here, delete
+    //result=result+str.substring(i-1,i)+str.substring(i+word.length())+...
+    i = str.indexOf(word,i+word.length());
+  }
+  return res;//return result.trim();切割
+}
