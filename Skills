@@ -5,6 +5,22 @@
 
 
 
+
+**
+  //round 做几轮 ignore取整就成
+  //有余数的在做一轮的情况：if else 判断有余数没  or
+  //边界取整 ((str.length()-1)/除数)+1
+
+**
+/*去除字符串的头尾空格:
+
+var str = "       Runoob        ";
+alert(str.trim());
+输出结果:
+
+Runoob*/
+//主要是 str.trim();
+
 **
 public List<String> wackyWords(List<String> wordsList) {//反面例    
  if (wordsList.size()>0){
