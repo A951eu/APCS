@@ -4,6 +4,7 @@
 继承 inheritance
 
 ---------------------------------------------------
+
 client program 用户输入
 
 ---------------------------------------------------
@@ -16,13 +17,14 @@ overloading: same method name, different parameter list
 爸的指针指儿子 （1）super class reference //好处 1. 传参 2. 数组
                   { S1.m1()  父子共有
                           →Polymorphism 多态
-                          →调谁depend on actual object
+                          →调谁depend on actual object（这种情况的actual object 是new后面的）
                     S1.m2() 特有
                           →要降级 downcast
                           →((Gradstudent)S1)).teach(); //前面一定要两个括号 因为dot优先级太高
                           //只能降到这个不能降到兄弟姐妹
                     }
-              （2）这种情况的actual object 是new后面的
               
 
 ---------------------------------------------------
+
+【】
