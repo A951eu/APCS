@@ -23,6 +23,7 @@ overloading: same method name, different parameter list
                           →((Gradstudent)S1)).teach(); //前面一定要两个括号 因为dot优先级太高
                           //只能降到这个不能降到兄弟姐妹
                     }
+        儿子的指针不能指爸爸
               
 
 
