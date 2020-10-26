@@ -28,8 +28,9 @@ overloading: same method name, different parameter list
                           //只能降到这个不能降到兄弟姐妹
                     }
         儿子的指针不能指爸爸
+        孙子调不到爷爷
               
-
+can in same array
 
 ---------------------------------------------------
 
@@ -126,9 +127,18 @@ sequence search:
 
 ---------------------------------------------------
 
+for each 循环
+for (int[] x :b)
+int[] x 是everyelement
+b必须是collection(array/arraylist)
 
+x第一次循环是第一个 第二次循环是第二个 等等
 
+特性
+  *只能看不能改 只能assess不能change 除非是调用自身函数改（再写一个循环把里面弄掉）
+  *hide index。每次都是x但是值不一样
 
+---------------------------------------------------
 
 
 
