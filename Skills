@@ -2,8 +2,25 @@
 
 
 
+**
+  int r = (int)(Math.random()*11)
+  //[0,11)
+  
+**
+  //放回抽取 沉底
+  //example
+   for (int k=value.length-1;k>=0;k--){
+            String r = (int)(Math.random()*(i+1));
+            String temp=value[k];
+            value[k]=value[r];
+            value[r]=temp;
+        }
 
 
+
+**
+  //四舍五入 (int)(value.length/2.0+0.5)
+  //边界取整 处理整数 一般用来分刚好（？）乘船问题 (value.length-1)/2+1
 
 
 **
