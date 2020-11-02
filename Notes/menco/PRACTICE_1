@@ -74,4 +74,14 @@ bank：0 5 10 15 都加10
 max+2+max=0
 max+2=-max
 
-28
+30
+f(abcd) n=4 si=bcd
+  f(bcd)+abcd+f(bcd)     n=3 si=cd
+    f(cd)+bcd+f(cd)
+      f(d)+cd+f(d)
+        f(" ")+d+f(" ")
+  26character 一个a
+
+31e
+
+
