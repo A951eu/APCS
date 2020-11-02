@@ -1,0 +1,77 @@
+02a
+string 不可改变
+  
+03c
+针没指到
+  
+04b
+object是所有class的爸爸（universal super class），最高级别。b这种是super class reference 是ok的
+  
+06b
+换成01的逻辑运算 先三输入转成两输入 最后是用+
+
+07c
+是取整
+
+09d
+写个trace table
+  
+11e
+看documentation 然后看看选项
+
+12a
+
+13a
+符合is relationship
+
+15D
+i count j
+0 1     0
+1 2->3->4 2->3->1
+2 5->6->7 3->1->2
+3 8->9    1->2->3
+一般来说都在6次循环之内
+
+16d
+找语法错
+
+17d
+
+18a
+不能出现.value
+只能在class内部的时候才能调
+
+19e
+参数级别高ok 能放进儿孙
+
+20c
+可以把k的变化写出来
+
+21e
+人家程序写的很好 1 2用拷贝 3是搬家
+permute 无返回执 要一个个搬回去
+3永远搬第一个 一个个搬过来的 word全部清空了 清空之后又循环201 
+
+22最后一个短的
+
+23e
+binary research 
+最差情况就没有 2的n次方那个n次找middle
+
+25a
+传参 名字一样的就先改成不一样的（*最后那边）
+copy值 int是新建了两个变量 这是pass value（指针的话就是pass adress）
+
+26e
+bank：0 5 10 15 都加10 
+
+27
+超限了 变负号
+2^32=0
+2^31=max+1
+(max+1)*2=0
+2max+2=0
+max+2+max=0
+max+2=-max
+
+28
