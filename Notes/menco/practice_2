@@ -1,0 +1,28 @@
+--------------------------------------------------
+
+05
+      注意空格
+      
+08
+      a 写二叉树
+      
+11
+      最重的5个牛 selection sort 就是排序的
+      
+14
+      donothing 是static 一定要用class name来调
+      考点也可能是返回执/参数类型 这里是返回执 23是对的 list型不能arraylist返回
+      
+17
+      超限 overflow 突然变负 最大是（2^32）-1     2^32=0
+
+18
+      assertion在while外用来检验。验证if a specified condition 满足
+      
+23
+      人家remove没写i-- 正走是隔着删的
+      
+25
+      s只能看不能改，s=t这句没意义
+      
+      
