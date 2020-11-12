@@ -24,5 +24,19 @@
       
 25
       s只能看不能改，s=t这句没意义
+
+26
+      line3 重新申明了 现在是local variable ，只作用在这个函数，级别比instance virable 高。
+      要调用instance 可以用this.xxx，就是调用这个函数里面的。
+      在这题里传参根本没传到后面。
       
+30
+      traverse 按行访问 int[] r : m
+      m.length行数 m[0].length列数
       
+34
+      c 儿子数组不能写爸爸
+
+37
+      for each loop more efficient
+
