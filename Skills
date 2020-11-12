@@ -1,10 +1,33 @@
 //---------------------2020.09---------------------------------------------------------------//
 
 
+
+
+
+
+
+**
+任意pair 握手问题：
+for(int i=0;i<xxx;i++)
+  for(int j=i+1;j<xxx;j++)
+    a[i] a[j]
+
+permutation (without order)
+1234    for (int i=0;i<xxx;i++)
+4312    {   int j = 0;
+            while(boundary&&走针)
+              {j++;}
+              assertion     }
+
+
+
 **
 mergesort 两个队 谁小谁出列 先两个一组 第二次四个一组 一组从头开始 前面的组的头地 对比 效率最高
 
 
+
+**
+arbitory 任意
 
 
 **
