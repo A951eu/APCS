@@ -2,9 +2,49 @@
 
 
 05
-
+    ABSTRACT 里面有空函数 有名字没内容（比如必定要被重写的）
+    vise versa 反之亦然
+    a xy是兄弟关系 不能互相传参
+    b 对的
+    
+08
+    interface 里面有空函数 
+    void没返回值 print不出来
+    
 20
+    
+21
+    指向同一内存空间
 
+24
+    第三个那个写法也是ok的
+    
 22
 
+
+27 
+    第三个不对 这是mutator 语法可以通过但是逻辑问题 不可以改instance variable
+
+28
+     list可以等于 new arraylist
+     arraylist 不可以等于 new list
+
 31
+    
+32
+    b*
+    儿子的constructor之前肯定有super开头
+    调用new b的时候调用之前有一个super 自动到爸爸那边打method one 再来打
+    
+37
+    swap selection
+    一开始的时候m是last 从最后开始
+    compareto 是比较ascll码顺序 （字典顺序）
+    
+38
+    比较四次 10
+
+40
+    取整那边有问题 取不到51
+    last-1
+    first+1
