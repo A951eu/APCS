@@ -56,8 +56,24 @@ PRAC#3
 
 PRAC#4
 
-
+13
+    I 儿子有几个参看不出来爸有几个参 所以是错的
+    儿子第一行一定要有super()，可以省略但是一定要有
+    
+14
+    toString 一定返回string 
+    看看类别
+    equals（object）
+    参数一定是obj，对rectangle过高了 要downcast 才能调
+    
+17
+    binary research 
+    
 29
 30
+    
+31
+    草 好好计算 超限了
+    
 34
 35
