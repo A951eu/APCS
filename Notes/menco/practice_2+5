@@ -40,3 +40,12 @@
 37
       for each loop more efficient
 
+
+
+PRAC#5
+
+      最大值，超限都是正最大值。超限又加减符号会占位变负。
+      
+32
+      partial overridding。e语法可以的
+      
