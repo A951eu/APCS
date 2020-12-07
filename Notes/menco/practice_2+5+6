@@ -49,3 +49,8 @@ PRAC#5
 32
       partial overridding。e语法可以的
       
+PRAC#6
+
+      +号 要不是arithmetic要不是string链接 如果出现string，后面都变成string
+      
+
